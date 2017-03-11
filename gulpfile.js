@@ -6,6 +6,7 @@ var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   cleanCSS = require('gulp-clean-css'),
   imagemin = require('gulp-imagemin'),
+    htmlmin        = require('gulp-htmlmin'),
   fs = require('fs'); // Node module for file system
 
 // browserSync Server
@@ -80,3 +81,53 @@ gulp.task('copy', function() {
 
 // Default Task
 gulp.task('default', ['styles', 'script', 'copy', 'serve', 'watch']);
+
+
+//////////////////////////////////////////////////////////
+///                      Build Task                    ///
+//////////////////////////////////////////////////////////
+
+// Build Server
+gulp.task('build-serve', function() {
+    browserSync.init({
+        server: "./demo"
+    });
+});
+
+//CSS
+gulp.task('css', function() {
+  	gulp.src('css/*.css')
+    	.pipe(gulp.dest('demo/css'));
+});
+
+//Html
+gulp.task('html', function () {
+	gulp.src('*.html')
+		.pipe(htmlmin({
+            collapseWhitespace: true, 
+            removeComments: true
+            }))
+        .pipe(gulp.dest('demo/'));
+});
+
+//Images
+gulp.task('image', () =>
+    gulp.src('img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('demo/img'))
+);
+
+//Uglify
+gulp.task('js', function () {
+	gulp.src('js/*.js')
+		.pipe(gulp.dest('demo/js'));
+});
+
+//Uglify
+gulp.task('src', function () {
+	gulp.src('src/**')
+		.pipe(gulp.dest('demo/src'));
+});
+
+//Build Task
+gulp.task('build', ['css', 'html', 'js', 'image', 'src', 'build-serve']);
