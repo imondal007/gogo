@@ -1,0 +1,20 @@
+{
+  "name": "gogo",
+  "title": "GoGo - Free Bootstrap template for chat bot landing page",
+  "version": "1.0.0",
+  "homepage": "https://imranmondal.com/opensource",
+  "author": "Imran Mondal",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.18.8",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.1"
+  }
+}
