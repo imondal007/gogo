@@ -1,12 +1,36 @@
-/* =========================
-          Theme Styles 
-   ========================= */
-
-//== Background Colors
+/* Background Colors */
 .gray-bg {
   background-color: $gray;
 }
 
 .blue-bg {
   background-color: $brand-primary;
+}
+
+/* Text Color */
+.text-white {
+  color: $white;
+}
+
+/* Margin */
+.t-margin-bt-0x {
+  margin-bottom: $margin-0x;
+}
+
+.t-margin-bt-1x {
+  margin-bottom: $margin-1x;
+}
+
+.t-margin-bt-2x {
+  margin-bottom: $margin-2x;
+}
+
+.t-margin-bt-3x {
+  margin-bottom: $margin-3x;
+}
+.t-margin-bt-6x {
+  margin-bottom: $margin-3x*2;
+}
+.text-margin-bottom-x {
+  margin-bottom: $margin-x;
 }

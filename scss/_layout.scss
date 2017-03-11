@@ -1,11 +1,16 @@
-
 /*  Layout  */
+
+.container {
+  max-width: 1000px;
+}
+
 .l-section {
   padding: $padding-3x $padding-0x;
-
   &-full-height {
     @extend .l-section;
-    height: 100vh;
+    @media screen and(min-width: 768px) {
+      height: 100vh;
+    }
   }
 }
 

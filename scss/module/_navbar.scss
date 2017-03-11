@@ -1,0 +1,29 @@
+/* Navbar */
+
+.navbar-transparent {
+  background-color: $gray;
+  border: 0px;
+  margin-bottom: 0px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+  @media screen and(min-width: 768px) {
+  background-color: transparent;
+  }
+}
+
+.btn {
+  &.btn-nav {
+    padding: 7px 15px;
+    margin: 9px 0;
+  }
+  &.btn-primary {
+    color: $white !important;
+    &:hover {
+      background-color: #286090 !important;
+    }
+  }
+}

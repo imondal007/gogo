@@ -1,48 +1,57 @@
 .social-link {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 
-	li {
-		padding: 0;
-		list-style-type: none;
+  li {
+    padding: 0;
+    list-style-type: none;
 
-		a {
-			display: inline-block;
-			padding: 5px;
-			color: $white;
-			min-height: 35px;
-			min-width: 35px;
-			text-align: center;
-			margin-bottom: $margin-1x;
+    a {
+      display: inline-block;
+      padding: 5px;
+      color: $black-lighter;
+      min-height: 35px;
+      min-width: 35px;
+      text-align: center;
+      margin-bottom: $margin-1x;
+      border-radius: 50%;
+			background-color: $white;
 
-			&:last-child {
-				margin: $margin-0x;
-			}
+      &:last-child {
+        margin: $margin-0x;
+      }
 
-			&.fb {
-				background-color: $facebook-color;
-			}
+      &.fb:hover {
+				color: $white;
+        background-color: $facebook-color;
+      }
 
-			&.tw {
-				background-color: $twitter-color;
-			}
+      &.tw:hover {
+				color: $white;
+        background-color: $twitter-color;
+      }
 
-			&.gp {
-				background-color: $googlePlus-color;
-			}
+      &.gp:hover {
+				color: $white;
+        background-color: $googlePlus-color;
+      }
 
-			&.lin {
-				background-color: $linkedIn-color;
-			}
-		}
-	}
+      &.lin:hover {
+				color: $white;
+        background-color: $linkedIn-color;
+      }
+
+    }
+  }
 }
 
 .social-link.inline {
-	li {
-		display: inline-block;
-		float: left;
-		margin-bottom: $margin-0x;
-		margin-right: $margin-1x; 
-	}
+  li {
+    display: inline-block;
+    margin-bottom: $margin-0x;
+    margin-right: $margin-1x;
+    &:last-child {
+      margin: $margin-0x;
+    }
+  }
 }

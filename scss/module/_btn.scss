@@ -1,0 +1,40 @@
+/* Button */
+.btn {
+    border: 0px;
+    border-radius: 0px !important;
+    font-family: $oxygen;
+
+    &-default {
+        color: $btn-default-color;
+    }
+
+    &-primary {
+        color: $btn-primary-color;
+        background-color: $brand-primary;
+
+        &-border {
+            background-color: transparent;
+            border: 1px solid $brand-primary;
+            color: $brand-primary;
+        }
+    }
+
+    &-info {
+        color: $btn-info-color;
+        background-color: $brand-info;
+    }
+
+    &-warning {
+        color: $btn-warning-color;
+        background-color: $brand-warning;
+
+        &:hover {
+            color:  $btn-warning-color;
+        }
+    }
+}
+
+.btn-lg {
+    padding: 10px 30px;
+    font-size: 1em;
+}

@@ -1,0 +1,16 @@
+/* Accordian */
+.panel-heading {
+  padding: $padding-1x $padding-2x;
+}
+.panel-title {
+    a {
+      font-size: 1.5em;
+      color: $black-lighter;
+    }
+}
+
+.panel-group {
+  .panel {
+    margin-bottom: $margin-1x;
+  }
+}

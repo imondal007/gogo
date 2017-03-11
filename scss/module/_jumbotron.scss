@@ -1,33 +1,42 @@
 /* Jumbotron */
 .jumbotron {
   background: $gray url("../img/header-bg.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
   margin-bottom: 0;
+  font-size: 1em;
 
   h1 {
     font-size: 2.5em;
     margin-bottom: 0;
-    margin-top: $margin-2x;
+    margin-top: $margin-3x*3;
+    margin-bottom: $margin-2x;
   }
 
   p {
     font-size: 1em;
   }
 
+  .container {
+    max-width: 1000px;
+  }
+
   &.l-section-full-height {
-    padding: $padding-3x*4 $padding-0x;
+    padding: $padding-3x*3 $padding-0x;
   }
 
   @media screen and (min-width: 768px) {
     h1 {
-      font-size: 3.157em;
+      font-size: 3em;
     }
     p {
-      font-size: 1.16em;
+      font-size: 1em;
     }
 
   &.l-section-full-height {
-    padding: $padding-3x*3 $padding-0x;
+    padding: $padding-3x*2 $padding-0x;
   }
   }
 }
