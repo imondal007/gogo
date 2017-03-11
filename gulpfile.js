@@ -46,8 +46,7 @@ gulp.task('image', () =>
 
 //Watch Task
 gulp.task('watch', function() {
-  gulp.watch("scss/*.scss", ['styles']);
-  gulp.watch("img/*", ['image']);
+  gulp.watch("scss/**/*.scss", ['styles']);
   gulp.watch(['js/*.js', '!js/*.min.js'], ['script']);
   gulp.watch("css/*.min.css").on('change', browserSync.reload);
   gulp.watch("*.html").on('change', browserSync.reload);
