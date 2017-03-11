@@ -1,0 +1,17 @@
+/* Carousel */
+.carousel-indicators {
+  bottom: 5px;
+  height: 10px;
+  padding-top: 30px;
+
+  li {
+    background-color: $gray-dark;
+    &.active {
+      background-color: $brand-warning;
+    }
+  }
+
+  @media screen and(min-width: 768px) {
+    bottom: 0px;
+  }
+}

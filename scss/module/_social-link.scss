@@ -1,0 +1,48 @@
+.social-link {
+	margin: 0px;
+	padding: 0px;
+
+	li {
+		padding: 0;
+		list-style-type: none;
+
+		a {
+			display: inline-block;
+			padding: 5px;
+			color: $white;
+			min-height: 35px;
+			min-width: 35px;
+			text-align: center;
+			margin-bottom: $margin-1x;
+
+			&:last-child {
+				margin: $margin-0x;
+			}
+
+			&.fb {
+				background-color: $facebook-color;
+			}
+
+			&.tw {
+				background-color: $twitter-color;
+			}
+
+			&.gp {
+				background-color: $googlePlus-color;
+			}
+
+			&.lin {
+				background-color: $linkedIn-color;
+			}
+		}
+	}
+}
+
+.social-link.inline {
+	li {
+		display: inline-block;
+		float: left;
+		margin-bottom: $margin-0x;
+		margin-right: $margin-1x; 
+	}
+}

@@ -1,3 +1,14 @@
-/* =========================
-          Layout Styles 
-   ========================= */
+
+/*  Layout  */
+.l-section {
+  padding: $padding-3x $padding-0x;
+
+  &-full-height {
+    @extend .l-section;
+    height: 100vh;
+  }
+}
+
+.l-img-center {
+  margin: 0 auto;
+}

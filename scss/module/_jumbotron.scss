@@ -1,0 +1,33 @@
+/* Jumbotron */
+.jumbotron {
+  background: $gray url("../img/header-bg.jpg");
+  background-size: cover;
+  margin-bottom: 0;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    margin-top: $margin-2x;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  &.l-section-full-height {
+    padding: $padding-3x*4 $padding-0x;
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 3.157em;
+    }
+    p {
+      font-size: 1.16em;
+    }
+
+  &.l-section-full-height {
+    padding: $padding-3x*3 $padding-0x;
+  }
+  }
+}
