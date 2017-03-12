@@ -1,4 +1,4 @@
 # GoGo
 Free Bootstrap template for chat bot landing page
 
-https://github.com/imondal007/gogo
+Demo: http://imondal007.github.io/gogo/demo
