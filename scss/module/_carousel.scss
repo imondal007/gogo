@@ -1,17 +1,21 @@
 /* Carousel */
+
+.carousel.slide {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .carousel-indicators {
-  bottom: 5px;
-  height: 10px;
-  padding-top: 30px;
-
-  li {
-    background-color: $gray-dark;
-    &.active {
-      background-color: $brand-warning;
+    bottom: 5px;
+    height: 10px;
+    padding-top: 30px;
+    li {
+        background-color: $gray-dark;
+        &.active {
+            background-color: $brand-warning;
+        }
     }
-  }
-
-  @media screen and(min-width: 768px) {
-    bottom: 0px;
-  }
+    @media screen and(min-width: 768px) {
+        bottom: 0px;
+    }
 }
